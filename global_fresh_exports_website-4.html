@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Global Fresh Exports - Fresh vegetables, spices and food products sourced and packed for international markets.">
+<title>Global Fresh Exports | Freshness Worldwide</title>
+<style>
+:root{--green:#14532d;--green2:#198754;--gold:#eab308;--ink:#14231a;--muted:#66736b;--cream:#f7faf5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #0000000c}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green);font-size:1.15rem}
+.logo{width:42px;height:42px;border-radius:12px;background:var(--green);display:grid;place-items:center;color:#fff;font-size:23px}
+nav{display:flex;gap:22px;align-items:center;font-size:.94rem;font-weight:600}
+nav a:hover{color:var(--green2)}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:12px 19px;border-radius:8px;font-weight:700;border:0}
+.btn:hover{background:#0f4224}
+.hero{background:linear-gradient(90deg,#082b1de8 0%,#0b3926b8 48%,#0b392633 100%),url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;min-height:570px;display:flex;align-items:center}
+.hero-content{max-width:680px;padding:75px 0}
+.eyebrow{color:#f5d56b;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.82rem}
+h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.08;margin:15px 0 20px}
+.hero p{font-size:1.1rem;max-width:590px;color:#edf6ef}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn.gold{background:var(--gold);color:#17220e}
+.btn.outline{background:transparent;border:1px solid #ffffffa8}
+section{padding:76px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 36px}
+.section-head .eyebrow{color:var(--green2)}
+h2{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.2;margin:10px 0 12px}
+.section-head p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product-card{border:1px solid #e6ece6;border-radius:15px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #153b1b08}
+.product-card img{width:100%;height:220px;object-fit:cover;display:block}
+.product-card .card-body{padding:20px}
+.product-card h3{margin-bottom:7px;color:var(--green)}
+.process{background:var(--cream)}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.process-card{background:white;border-radius:14px;overflow:hidden;border:1px solid #e6eee5}
+.process-card img{width:100%;height:205px;object-fit:cover}
+.process-card .card-body{padding:18px}
+.step{display:inline-grid;place-items:center;width:32px;height:32px;background:#e5f3e8;color:var(--green);font-weight:800;border-radius:50%;margin-bottom:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.about img{width:100%;height:390px;object-fit:cover;border-radius:18px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.feature{background:#f3f8f2;padding:12px;border-radius:8px;font-weight:700;color:var(--green)}
+.cta{background:var(--green);color:white;text-align:center}
+.cta p{color:#dcece0;max-width:650px;margin:0 auto 24px}
+.contact-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}
+.contact-info{background:var(--green);color:white;border-radius:16px;padding:30px}
+.contact-info p{color:#e2efe5;margin:12px 0}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form label{font-size:.88rem;font-weight:700;display:block;margin-bottom:5px}
+form input,form textarea{width:100%;padding:12px;border:1px solid #d6e0d6;border-radius:8px;font:inherit}
+form textarea{min-height:110px;resize:vertical}
+.full{grid-column:1/-1}
+footer{background:#0a2115;color:#d9e5dc;padding:28px 0;text-align:center;font-size:.9rem}
+footer strong{color:white}
+@media(max-width:800px){nav{display:none}.grid,.process-grid{grid-template-columns:repeat(2,1fr)}.about,.contact-wrap{grid-template-columns:1fr}.hero{min-height:500px}}
+@media(max-width:560px){.grid,.process-grid{grid-template-columns:1fr}.hero-content{padding:58px 0}.product-card img,.process-card img{height:220px}form{grid-template-columns:1fr}.full{grid-column:auto}.features{grid-template-columns:1fr}section{padding:55px 0}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#home"><span class="logo">🌿</span><span>GLOBAL FRESH<br><small style="font-size:.68rem;letter-spacing:2px">EXPORTS</small></span></a>
+  <nav><a href="#products">Products</a><a href="#process">Our Process</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#contact">Get a Quote</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="container"><div class="hero-content">
+  <div class="eyebrow">From Indian farms to the world</div>
+  <h1>Freshness Delivered.<br>Quality Exported.</h1>
+  <p>Your trusted sourcing partner for fresh vegetables, premium spices and selected food products—carefully handled, hygienically packed and prepared for global markets.</p>
+  <div class="hero-actions"><a class="btn gold" href="#products">Explore Products</a><a class="btn outline" href="#contact">Request Export Quote</a></div>
+ </div></div>
+</section>
+<section id="products">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Our product range</div><h2>Quality Products for Global Buyers</h2><p>Product availability, grades and packaging can be customized according to buyer requirements and destination-market standards.</p></div>
+  <div class="grid">
+   <article class="product-card"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80" alt="Fresh assorted vegetables"><div class="card-body"><h3>Fresh Vegetables</h3><p class="muted">Potato, tomato, onion, okra, green chilli, red chilli and seasonal vegetables.</p></div></article>
+   <article class="product-card"><img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=900&q=80" alt="Indian spices"><div class="card-body"><h3>Spices & Chilli</h3><p class="muted">Whole and selected spices, red chilli, green chilli and spice ingredients.</p></div></article>
+   <article class="product-card"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Food products"><div class="card-body"><h3>Food Products</h3><p class="muted">Selected Indian food products and ingredients for wholesale and export enquiries.</p></div></article>
+  </div>
+ </div>
+</section>
+<section class="process" id="process">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Care at every stage</div><h2>Farm to Container Loading</h2><p>We focus on organized handling and export preparation throughout the supply chain.</p></div>
+  <div class="process-grid">
+   <article class="process-card"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Farm sourcing"><div class="card-body"><span class="step">01</span><h3>Farm Sourcing</h3><p class="muted">Selecting produce from farms and trusted suppliers.</p></div></article>
+   <article class="process-card"><img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=900&q=80" alt="Sorting and grading vegetables"><div class="card-body"><span class="step">02</span><h3>Sorting & Grading</h3><p class="muted">Quality checks, sorting and grading as per order specifications.</p></div></article>
+   <article class="process-card"><img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=80" alt="Cleaning produce"><div class="card-body"><span class="step">03</span><h3>Cleaning & Preparation</h3><p class="muted">Careful preparation and handling for product-specific needs.</p></div></article>
+   <article class="process-card"><img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?auto=format&fit=crop&w=900&q=80" alt="Export packaging"><div class="card-body"><span class="step">04</span><h3>Export Packaging</h3><p class="muted">Cartons, mesh bags or buyer-approved packaging options.</p></div></article>
+   <article class="process-card"><img src="https://images.unsplash.com/photo-1601598851547-430f3f3f6b7b?auto=format&fit=crop&w=900&q=80" alt="Warehouse packed goods"><div class="card-body"><span class="step">05</span><h3>Storage & Dispatch</h3><p class="muted">Order coordination and dispatch preparation with suitable handling.</p></div></article>
+   <article class="process-card"><img src="https://images.unsplash.com/photo-1494412574643-35d324a2c6b8?auto=format&fit=crop&w=900&q=80" alt="Shipping container loading" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1494412574643-35d324a2c6b8?auto=format&fit=crop&w=900&q=80'"><div class="card-body"><span class="step">06</span><h3>Container Loading</h3><p class="muted">Shipment loading coordination for export transportation.</p></div></article>
+  </div>
+ </div>
+</section>
+<section id="about">
+ <div class="container about">
+  <div><div class="eyebrow" style="color:var(--green2)">About our business</div><h2>Connecting Indian Produce with International Markets</h2><p class="muted">Global Fresh Exports is focused on supplying fresh agricultural products, spices and food items to international buyers. We aim to build dependable trade relationships through clear communication, careful product handling and buyer-oriented packing.</p>
+   <div class="features"><div class="feature">✓ Buyer-focused sourcing</div><div class="feature">✓ Export-ready packing</div><div class="feature">✓ Product variety</div><div class="feature">✓ Shipment coordination</div></div>
+  </div>
+  <img src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?auto=format&fit=crop&w=1200&q=85" alt="Export packing and produce preparation">
+ </div>
+</section>
+<section class="cta"><div class="container"><h2>Looking for an Indian Export Supplier?</h2><p>Share your product, quantity, packaging and destination details. We’ll get back to you with an enquiry response.</p><a class="btn gold" href="#contact">Send an Enquiry</a></div></section>
+<section id="contact">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Contact us</div><h2>Let’s Discuss Your Requirements</h2><p>Fill in your contact details and export enquiry.</p></div>
+  <div class="contact-wrap">
+   <div class="contact-info"><h3>Global Fresh Exports</h3><p>📍 Village: <strong>[Your Village]</strong><br>District: <strong>[Your District]</strong><br>State: <strong>[Your State]</strong><br>PIN Code: <strong>[Your PIN Code]</strong></p><p>📞 Phone: <strong>[Your Phone Number]</strong></p><p>✉️ Email: <strong>[Your Email Address]</strong></p><p>🌍 Exporting Indian produce to global markets.</p></div>
+   <form onsubmit="sendEnquiry(event)">
+    <div><label for="name">Your Name</label><input id="name" required placeholder="Enter your name"></div>
+    <div><label for="phone">Phone Number</label><input id="phone" required placeholder="Enter phone number"></div>
+    <div><label for="email">Email Address</label><input id="email" type="email" placeholder="Enter email"></div>
+    <div><label for="country">Destination Country</label><input id="country" placeholder="Country"></div>
+    <div><label for="product">Product Required</label><input id="product" required placeholder="Vegetables, spices, etc."></div>
+    <div><label for="quantity">Quantity / Packaging</label><input id="quantity" placeholder="Quantity and packaging"></div>
+    <div class="full"><label for="message">Enquiry Details</label><textarea id="message" placeholder="Tell us your requirements"></textarea></div>
+    <div class="full"><button class="btn" type="submit">Send Enquiry via Email</button></div>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="container">© <span id="year"></span> <strong>Global Fresh Exports</strong>. All rights reserved. | Freshness from India to the world.</div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function sendEnquiry(e){
+ e.preventDefault();
+ const fields=['name','phone','email','country','product','quantity','message'];
+ const values=fields.map(id=>document.getElementById(id).value.trim());
+ const subject=encodeURIComponent('Export Business Enquiry - '+values[4]);
+ const body=encodeURIComponent('Name: '+values[0]+'\\nPhone: '+values[1]+'\\nEmail: '+values[2]+'\\nDestination: '+values[3]+'\\nProduct: '+values[4]+'\\nQuantity/Packaging: '+values[5]+'\\nDetails: '+values[6]);
+ // Replace this email with your business email address before publishing.
+ window.location.href='mailto:YOUR_EMAIL@example.com?subject='+subject+'&body='+body;
+}
+</script>
+</body>
+</html>
